@@ -8,7 +8,7 @@ router.get('/', function (req, res, next) {
 
 // callback handler
 router.get('/callback', function (req, res, next) {
-    console.log(req.query);
+    const authCode = res.query.code;
     res.send(200);
 });
 

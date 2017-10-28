@@ -1,0 +1,63 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+	<form action="https://www.google.com.au">
+   <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+  <div class="input-field col s12 m6" id="field1" style="width: 600px; height: 250px;float:left;margin:50px" >
+    
+    <label>Images in select</label>
+	<br></br>
+	<select class="icons" >
+      <option value="" disabled selected>Who would you like to compliment?</option>
+      <option value="jared" data-icon="http://www.kmart.com.au/wcsstore/Kmart/images/ncatalog/tf/7/42466567-1-tf.jpg" class="circle">Jared</option>
+      <option value="kalina" data-icon="https://media1.popsugar-assets.com/files/thumbor/yXlp640Tn-VxbxP-vaiI2NKZjxA/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2017/01/09/880/n/1922507/17b90c6d5873edb1231823.18767920_edit_img_image_18019874_1483991626/i/What-Salt-Bae-Meme.jpg" class="circle">Kalina</option>
+      <option value="anthony" data-icon="photos/anthony.png">Anthony</option>
+	  <option value="lynn" data-icon="photos/anthony.png" class="circle">Lynn</option>
+	  <option value="billy" data-icon="photos/anthony.png" class="circle">Billy</option>
+    </select>
+	
+  </div>
+
+  <div class="input-field col s12 m6" id="field2" style="width: 600px; height: 250px;float:left;margin:50px">
+	<br></br>
+	<select class="icons" >
+      <option value="" disabled selected>What would you like them to know?</option>
+      <option value="comp1" >Top bloke</option>
+      <option value="comp2">Sick c***</option>
+      <option value="comp3">Bonzer</option>
+	  <option value="comp3">Kudos</option>
+    </select>
+  </div>
+	
+	<div align="center">
+	
+	<button type="submit" class="btn waves-effect waves-light" onclick="Materialize.toast('Thank you for your submission', 2000,'',function(){alert('You are now clocked out. Enjoy the rest of your day!')})">Let them know
+    <i class="material-icons right">mood</i>
+	</button>
+	</div>
+	<script>
+	function submissionComplete() {
+		
+		return false;
+	}
+	</script>
+		
+	
+	 
+</form>
+</body>
+  </html>
+        
